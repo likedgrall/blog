@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block title %} Blog {% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <h1>Плейлист видео</h1>
+        <ul>
+            {%for video in videos%}
+            <li class="card" style="width: 18rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{video.embed_code}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">{{video.name}}</h5>
+                    <p class="card-text">{{video.description}}</p>
+                    <span>Просмотры: {{video.views}}</span>
+                    <span>Дата: {{video.date}}</span>
+                </div>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+</section>
+{% endblock %}

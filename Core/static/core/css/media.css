@@ -1,0 +1,336 @@
+@media (max-width: 1235px) {
+    header .header__info h1 {
+        font-size: 48px;
+    }
+
+    header .header__raits .models h4 {
+        font-size: 28px;
+    }
+
+    header .header__raits .models span {
+        font-size: 28px;
+    }
+
+    header .header__raits .clients h4 {
+        font-size: 28px;
+    }
+
+    header .header__raits .clients span {
+        font-size: 28px;
+    }
+
+    header .header__raits hr {
+        height: 82px;
+    }
+
+    header img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav__links {
+        gap: 40px;
+    }
+    .about-us__elements {
+        flex-direction: column;
+    }
+    .about-us__info h2 {
+        text-align: center;
+    }
+    .about-us__info > p {
+        text-align: center;
+        max-width: 674px;
+    }
+    .about-us_blockimg {
+        width: 52vw;
+        height: 52vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .design {
+        width: 52vw;
+        margin: 0 auto;
+    }
+    
+    .cost {
+        width: 52vw;
+        margin: 0 auto;
+    }
+    header {
+        height: auto;
+        padding-bottom: 80px;
+    }
+    header .header__elements {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    header img {
+        width: 450px;
+    }
+
+    .header__info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__info p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        max-width: 571px;
+        width: 100%;
+    }
+
+    header .header__info h1 {
+        text-align: center;
+        line-height: 68px;
+    }
+
+    .header__photo-raits {
+        margin-bottom: 40px;
+    }
+
+    .header__info button {
+        margin-bottom: 40px;
+    }
+
+    .raits i {
+        color: var(--YellowGreen);
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__elements {
+        flex-direction: column;
+        gap: 80px;
+        padding: 0;
+        text-align: center;
+    }
+    footer {
+        padding-bottom: 20px;
+    }
+    .newmodel-card {
+        max-width: 340px;
+        width: calc(100vw - 60px);
+    }
+    .new-model__elements {
+        width: 100vw;
+        transform: translateX(-20px);
+        padding: 110px 20px 20px 20px;
+        gap: 55px;
+    }
+    .categories__buttons i {
+        display: block;
+    }
+    .categories__buttons span {
+        display: none;
+    }
+    .categories__buttons button {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .cards-list {
+        width: 100vw;
+        transform: translateX(-20px);
+        padding: 10px 20px;
+    }  
+    .categories-card {
+        width: calc(100vw - 60px);
+    } 
+    .categories-card__info {
+        padding: 20px 20px;
+    }
+    .about-us_blockimg {
+        width: 70vw;
+        height: 70vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .design {
+        width: 70vw;
+        margin: 0 auto;
+    }
+    
+    .cost {
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .nav__links {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--YellowGreen);
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20vh;
+        transform: translateX(100%);
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.7, -0.5, 0.3, 1);
+        align-items: center;
+    }
+
+    .nav__links a {
+        color: var(--White);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .nav__profile {
+        flex-direction: column-reverse;
+        gap: 20px;
+        color: var(--Black);
+        position: fixed;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.7, -0.5, 0.3, 1);
+    }
+
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 20px;
+        background: transparent;
+        position: relative;
+    }
+
+    .hamburger span {
+        background-color: var(--YellowGreen);
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.7, -0.5, 0.3, 1);
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 9px;
+    }
+
+    .hamburger span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .hamburger_active span {
+        background-color: var(--White);
+    }
+
+    .hamburger_active span:nth-child(1) {
+        top: 9px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger_active span:nth-child(2) {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        bottom: 9px;
+        transform: rotate(-45deg);
+    }
+
+    .nav__links_active {
+        transform: translateX(0%);
+    }
+
+    .nav__logo_active path {
+        fill: var(--White);
+    }
+
+    .nav__profile_active {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 470px) {
+    .about-us_blockimg {
+        width: calc(100vw - 40px);
+        height: calc(100vw - 40px);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .design {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .cost {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header img {
+        width: 300px;
+    }
+    header .header__info h1 {
+        font-size: 45px;
+        line-height: 56px;
+    }
+    header .header__raits .models h4 {
+        font-size: 20px;
+    }
+
+    header .header__raits .models span {
+        font-size: 20px;
+    }
+
+    header .header__raits .clients h4 {
+        font-size: 20px;
+    }
+
+    header .header__raits .clients span {
+        font-size: 20px;
+    }
+    header .header__raits hr {
+        height: 50px;
+    }
+    header .header__raits {
+        width: 280px;
+    }
+    .header__info p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    header .header__info h1 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .design {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .design .block {
+        width: 100%;
+    }
+    
+    .cost {
+        width: 100%;
+        margin: 0 auto;
+        gap: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cost .block {
+        width: 100%;
+    }
+}

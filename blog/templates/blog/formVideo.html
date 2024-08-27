@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block title %} Add Video {% endblock %}
+{% block content %}
+        <form class="form__add_video" action="#" method="POST">
+            {% csrf_token %}
+            <h1>Форма добавления видео</h1>
+            <input name="name" type="text" placeholder="Название видео">
+            <input name="description" type="text" placeholder="Описание">
+            <input name="embed_code" type="text" placeholder="Встраиваемый код">
+            <button type="submit">Добавить видео</button>
+        </form>
+{% endblock %}

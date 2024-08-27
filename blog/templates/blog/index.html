@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% block title %} Blog {% endblock %}
+{% block content %}
+  {%for post in posts%}
+    {%if post.likes > 10%}
+      
+          <div class="card" style="width: 18rem;">
+            <img src="{{post.img.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{post.name}}</h5>
+              <p class="card-text">{{post.description}}</p>
+              <form action="{% url 'addLikes' %}" method="POST">
+                {% csrf_token %}
+                <input name="post_id" value="{{post.id}}" type="hidden">
+                <button type="submit" class="btn btn-primary">&hearts; <span>{{post.likes}}</span></button>
+              </form>
+            </div>
+          </div>
+    {%endif%}
+  {%endfor%}
+{% endblock %}
